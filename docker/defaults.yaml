@@ -3,4 +3,4 @@
 docker:
   process_signature: '/usr/bin/docker'
   refresh_repo: True
-  config: []
+  config: ['DOCKER_OPTS="-H unix:///var/run/docker.sock -H tcp://0.0.0.0:2375 --cluster-store=etcd://10.20.5.30:4001 --cluster-advertise=eth3:2379 --insecure-registry registry.dlatv.net:5000"']
